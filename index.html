@@ -3,59 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Invitation</title>
+    <title>You're Invited! - Birthday Party</title>
+    <!-- Google Fonts - Import a festive font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* General Body Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Open Sans', sans-serif; /* Default font */
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f9e7e7; /* Light pink background */
             color: #333;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f4d4d4' fill-opacity='0.4'%3E%3Cpath d='M36 50l-8-8-8 8-4-4 8-8 8 8 4 4zm-20-8l8-8 8 8 4-4-8-8-8 8-4 4zm31-2l-8 8 4 4 8-8-4-4zm-23 4l8-8 4 4-8 8-4-4zm12-22l8 8 4-4-8-8-4 4zm-20 4l8-8 4 4-8 8-4-4zm31-2l-8 8 4 4 8-8-4-4zm-23 4l8-8 4 4-8 8-4-4zM60 60H0V0h60v60z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); /* Subtle pattern */
         }
+
+        /* Invitation Container */
         .invitation {
-            width: 80%;
-            max-width: 600px;
-            margin: 20px auto;
+            width: 85%; /* Slightly wider */
+            max-width: 700px; /* Increased max width */
+            margin: 30px auto; /* More top/bottom margin */
             background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px; /* Increased padding */
+            border-radius: 12px; /* More rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+            border: 1px solid #eee; /* Subtle border */
         }
-        header, section, footer {
-            margin-bottom: 20px;
+
+        /* Header Styles */
+        header {
+            text-align: center; /* Center the title */
+            margin-bottom: 30px;
         }
+
         header h1 {
-            color: #d9534f;
+            color: #e91e63; /* Bright pink */
+            font-family: 'Pacifico', cursive; /* Festive font for the title */
+            font-size: 2.8em; /* Larger title */
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
+
+        /* Image Styles */
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 12px; /* Rounded image corners */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
             border-radius: 8px;
+            background-color: #fefefe; /* Slightly off-white */
+            border: 1px solid #f0f0f0;
         }
+
+        section h2 {
+            color: #e91e63; /* Pink heading */
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #fcd4d4; /* Light pink underline */
+            padding-bottom: 5px;
+        }
+
+        /* Details Styles */
         .details p {
-            margin: 5px 0;
+            margin: 8px 0;
+            color: #555;
         }
+
+        .details strong {
+            color: #e91e63; /* Pink for emphasized text */
+        }
+
+        /* Bring Styles */
         .bring ul {
-            padding-left: 20px;
+            padding-left: 25px;
+            list-style-type: square; /* Square bullet points */
         }
+
         .bring ul li {
-            margin: 5px 0;
+            margin: 8px 0;
+            color: #555;
         }
+
+        /* RSVP Styles */
+        .rsvp {
+            text-align: center; /* Center the RSVP info */
+        }
+
         .rsvp a {
-            color: #5bc0de;
+            color: #2196f3; /* Blue link */
             text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
+
+        .rsvp a:hover {
+            color: #e91e63; /* Pink on hover */
+        }
+
+        /* Map Styles */
         .map iframe {
             width: 100%;
             height: 300px;
             border: 0;
-            border-radius: 8px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /* Contact Styles */
+        .contact p {
+            color: #555;
+        }
+
+        .contact a {
+            color: #2196f3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* Footer Styles */
         footer {
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: #777;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
